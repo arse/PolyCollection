@@ -71,8 +71,7 @@ need to pull in the template which lists the available types for you:
 the name of the polycollection input)
 ```
     <div>
-        {{ form_label(form.operators) }}
-        <ul class="polycollection" data-prototype="<li class='polycollection-item'><div class='operator-fold'>Fold</div><div class='operator-remove'>Remove</div>__ITEM__</div></li>"></ul>
+        {% include 'InfinitePolyCollectionBundle::polycollection_input.html.twig' with {'input': form.operators [, 'class': 'any_additional_css_classes']}%}
     </div>
 ```
 
@@ -85,5 +84,3 @@ my base templates)
     {% endjavascripts %}
 {% endblock %}
 ```
-
-To ensure compatability with your code, javascript for folding and removing is not included.
