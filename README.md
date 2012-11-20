@@ -9,6 +9,23 @@ at run time. I've made a minor few changes to the code, and added a template and
 * See longer description at http://tim.nagel.com.au/symfony2/forms/polycollection-for-symfony2-forms/
 * See gist at https://gist.github.com/3058342 (for symfony 2.0)
 
+Install
+--------
+
+1. Slap the code into a directory in either your src or vendor directory:
+```
+src/Infinite/PolyCollection
+```
+or
+```
+vendor/Infinite/PolyCollection
+```
+
+2. Enable in your appKernel.php
+```
+$bundles[] = new \Infinite\PolyCollectionBundle\InfinitePolyCollectionBundle();
+```
+
 Use
 -----
 
