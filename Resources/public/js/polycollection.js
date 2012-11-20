@@ -1,7 +1,7 @@
 $(function(){
     var polyCollectionCounter = 0;
 
-    $('li.polycollection-types').click(function(){
+    $('li.polycollection-type').click(function(){
         // pull data from elements
         var type = $(this).data('type');
         var itemPrototype = $(this).data('prototype');

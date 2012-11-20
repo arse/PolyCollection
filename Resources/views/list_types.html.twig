@@ -1,6 +1,6 @@
 <ul class="polycollection-types">
     {% for type, line in input.get('prototypes') %}
-    <li class="operator-li" data-type="{{type}}" data-prototype="{{ form_row(line) | escape }}">
+    <li class="polycollection-type" data-type="{{type}}" data-prototype="{{ form_row(line) | escape }}">
         <a class="add_item btn btn-primary line_{{ type }}" href="#">
             <i class="icon-plus icon-white"></i> Add {{ type }}
         </a>
