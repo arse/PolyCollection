@@ -3,8 +3,8 @@ Inifinite PolyCollection Bundle (Symfony 2.1)
 ================================
 
 Until Infinite release their form helper bundle of goodness, here's an unofficial bundle using Tim Nagel's "Poly
-Collection" code which allows forms to use related types to be added to the form dynamically and submitted to a form
-at run time. I've made a minor few changes to the code, and added a template and some js for this bundle
+Collection" code which allows forms to use different types (with common parent) to be added to one form input dynamically
+at run time. I've made a minor few changes to the code, and added a template and some js for this bundle.
 
 See longer description at http://tim.nagel.com.au/symfony2/forms/polycollection-for-symfony2-forms/
 See gist at https://gist.github.com/3058342 (for symfony 2.0)
