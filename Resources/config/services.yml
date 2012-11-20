@@ -1,0 +1,6 @@
+services:
+    # ...
+    infinite.polycollection_type:
+        class: Infinite\PolyCollectionBundle\Form\Type\PolyCollectionType
+        tags:
+          - { name: form.type, alias: polycollection }
