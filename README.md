@@ -68,3 +68,5 @@ my base templates)
 <script type="text/javascript" src="{{ asset_url }}"></script>
 {% endblock %}
 ```
+
+To ensure compatability with your code, javascript for folding and removing is not included.
