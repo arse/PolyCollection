@@ -19,7 +19,6 @@ Infinite\PolyCollectionBundle\Form\Type\AbstractPolyCollectionType
 
 2. Register each form type in the container with an alias that is the same as the form type name given in its getName
 method:
-
 ```
 services:
     namespace.type.foo:
