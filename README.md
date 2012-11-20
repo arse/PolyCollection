@@ -80,10 +80,9 @@ the name of the polycollection input)
 my base templates)
 ```
 {% block javascripts %}
-{% javascripts
-        '@InfinitePolyCollectionBundle/Resources/public/js/polycollection.js'
-    %}
-<script type="text/javascript" src="{{ asset_url }}"></script>
+    {% javascripts '@InfinitePolyCollectionBundle/Resources/public/js/polycollection.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 {% endblock %}
 ```
 
