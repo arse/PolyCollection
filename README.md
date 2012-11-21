@@ -1,5 +1,5 @@
 
-Inifinite PolyCollection Bundle (Symfony 2.1)
+Infinite PolyCollection Bundle (Symfony 2.1)
 ================================
 
 Until Infinite release their form helper bundle of goodness, here's an unofficial bundle using Tim Nagel's "Poly
