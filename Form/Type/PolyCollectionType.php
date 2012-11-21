@@ -147,6 +147,6 @@ class PolyCollectionType extends AbstractType
      */
     public function getName()
     {
-        return 'polycollection';
+        return 'InfinitePolyCollection';
     }
 }
