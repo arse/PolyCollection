@@ -1,11 +1,5 @@
 <?php
-/**
- *
- * File: PolyCollectionType.php
- * User: thomas
- * Date: 20/11/12
- *
- */
+
 namespace Infinite\PolyCollectionBundle\Form\Type;
 
 use Infinite\PolyCollectionBundle\Form\EventListener\ResizePolyFormListener;

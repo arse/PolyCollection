@@ -1,11 +1,5 @@
 <?php
-/**
- *
- * File: ResizePolyFormListener.php
- * User: thomas
- * Date: 20/11/12
- *
- */
+
 namespace Infinite\PolyCollectionBundle\Form\EventListener;
 
 use Assert\Assertion;

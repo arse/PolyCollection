@@ -1,11 +1,5 @@
 <?php
-/**
- *
- * File: AbstractPolyCollectionType.php
- * User: thomas
- * Date: 20/11/12
- *
- */
+
 namespace Infinite\PolyCollectionBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
