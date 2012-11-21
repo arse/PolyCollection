@@ -9,7 +9,8 @@ $(function(){
         var liPrototype = $('ul.polycollection').data('prototype');
 
         // replace with a default title and insert li prototype into ul li wrapper prototype
-        itemPrototype = itemPrototype.replace(/__name__label__/g, type);
+        itemPrototype = itemPrototype.replace(/__name__/g, type);
+        itemPrototype = itemPrototype.replace(/label__/g, type);
         var combinedPrototype = liPrototype.replace(/__ITEM__/, itemPrototype);
         combinedPrototype = combinedPrototype.replace(/__TITLE__/, type);
 
