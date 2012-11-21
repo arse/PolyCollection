@@ -34,8 +34,8 @@ Use
 Infinite\PolyCollectionBundle\Form\Type\AbstractPolyCollectionType
 ```
 
-2. Register each form type in the container with an alias that is the same as the form type name given in its getName
-method:
+2. For each formtype that is to be used inside the polycollection, register it in the container with an alias that is
+the same as the form type name given in its getName method:
 ```
 services:
     namespace.type.foo:
@@ -44,13 +44,12 @@ services:
             -   {name:form.type, alias: formtypename}
 ```
 
-3. In the main form type class which is to make use the poly collection: (replace "operator" with the name of the field
-you want the input to be for:
+3. In the main form type class which is to make use of the poly collection add the polycollection type:
+(replace "operator" with the name of the field you want the input to be for:
 ```
 $builder->add('operator', 'InfinitePolyCollection', array(
         'types' => array(
-            'formtype_service_alias_name',        // the formtype name as defined in getName()
-            'another_formtype_service_alias_name',
+            // type names to be used inside polycollection as defined by their getName()
             ...
         ),
         'allow_add' => true,
@@ -66,16 +65,17 @@ need to pull in the template which lists the available types for you:
 {% include 'InfinitePolyCollectionBundle::list_types.html.twig' with {'input': form.operators} %}
 ```
 
-5. In the same template, for the polycollection input: (again, replace "form.operators" with the form variable name, and
-the name of the polycollection input)
+5. In the same template, for the polycollection input include the template for the polycollection input:
+(again, replace "form.operators" with the form variable name, and the name of the polycollection input) also, add any
+classes you want to be applied to the input
 ```
     <div>
         {% include 'InfinitePolyCollectionBundle::polycollection_input.html.twig' with {'input': form.operators [, 'class': 'any_additional_css_classes']}%}
     </div>
 ```
 
-6. Include the polycollection javascript in your template: (I find it useful to have an additional javascripts block in
-my base templates)
+6. Be sure to install the assets and include the polycollection javascript in your template: (I find it useful to have
+an additional javascripts block in my base templates)
 ```
 {% block javascripts %}
     {% javascripts '@InfinitePolyCollectionBundle/Resources/public/js/polycollection.js' %}
