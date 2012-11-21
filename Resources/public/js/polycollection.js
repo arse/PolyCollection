@@ -2,7 +2,9 @@ $(function(){
     var polyCollectionCounter = 0;
 
     // when an available polytype line is clicked, add to list of current polytypes
-    $('li.polycollection-type').click(function(){
+    $('li.polycollection-type').click(function(e){
+        e.preventDefault();
+        
         // pull data from elements
         var type = $(this).data('type') + '_' + polyCollectionCounter++;
         var itemPrototype = $(this).data('prototype');
