@@ -1,5 +1,4 @@
 services:
-    # ...
     infinite.polycollection_type:
         class: Infinite\PolyCollectionBundle\Form\Type\PolyCollectionType
         tags:
