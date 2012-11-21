@@ -48,7 +48,7 @@ services:
 3. In the main form type class which is to make use the poly collection: (replace "operator" with the name of the field
 you want the input to be for:
 ```
-$builder->add('operator', 'polycollection', array(
+$builder->add('operator', 'InfinitePolyCollection', array(
         'types' => array(
             'formtype_service_alias_name',        // the formtype name as defined in getName()
             'another_formtype_service_alias_name',
