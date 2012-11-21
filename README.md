@@ -90,3 +90,4 @@ TODO
 * Add some CSS love to the form, esp the fold and remove divs
 * Allow remove / fold to be optional in the form definition - so that instead of hardcoding it in the twig template,
 before it renders the fold and remove div, it'll check to see if you've defined it in the form input definition
+* How to translate the labels for the 'Add FormTypeName' li's into something more friendlier
