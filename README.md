@@ -74,13 +74,20 @@ classes you want to be applied to the input
     </div>
 ```
 
-6. Be sure to install the assets and include the polycollection javascript in your template: (I find it useful to have
-an additional javascripts block in my base templates)
+6. Be sure to install the assets and include the polycollection javascript and css in your template: (I find it useful to have
+an additional javascripts and css block in my base templates)
 ```
 {% block javascripts %}
-    {% javascripts '@InfinitePolyCollectionBundle/Resources/public/js/polycollection.js' %}
+    {% javascripts '@InfinitePolyCollectionBundle/Resources/public/polycollection.js' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
+{% endblock %}
+```
+```
+{% block stylesheets %}
+    {% stylesheets 'bundles/infinitepolycollection/polycollection.css' %}
+        <link type="text/css" rel="stylesheet" href="{{ asset_url}}" />
+    {% endstylesheets %}
 {% endblock %}
 ```
 
